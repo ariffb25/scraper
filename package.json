@@ -6,7 +6,7 @@
   "types": "./lib/@types/index.d.ts",
   "scripts": {
     "test": "npm run build:test && mocha --timeout 50000 ./lib/**/**/test.js",
-    "build": "npm install --ignore-scripts -D && npm run build:all",
+    "build": "npm run build:all",
     "build:all": "tsc",
     "build:test": "tsc --p tsconfig.test.json",
     "prepare": "npm run build"
